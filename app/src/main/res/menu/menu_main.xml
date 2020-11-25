@@ -1,10 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.piggybankroid.MainActivity">
+
+ <item
+     android:id="@+id/btn_home"
+     android:icon="@drawable/btn_home_active"
+     android:title="홈"/>
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/btn_list"
+        android:icon="@drawable/btn_list_inactive"
+        android:title="거래내역"/>
+
+    <item
+        android:id="@+id/btn_goods"
+        android:icon="@drawable/btn_goods_inactive"
+        android:title="상품"
+        />
+
+    <item
+        android:id="@+id/btn_profile"
+        android:icon="@drawable/btn_profile_inactive"
+        android:title="설정"/>
+
 </menu>

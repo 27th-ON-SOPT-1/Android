@@ -1,38 +1,28 @@
 package com.example.piggybankroid
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var viewPagerAdapter: ViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
-    }
+        supportFragmentManager.beginTransaction().add(R.id.change_view, HomeFragment()).commit()
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        sample_bottom_blue.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.btn_home -> supportFragmentManager.beginTransaction().replace(R.id.change_view, HomeFragment()).commit()
+                R.id.btn_list -> supportFragmentManager.beginTransaction().replace(R.id.change_view, ListFragment()).commit()
+                R.id.btn_goods -> supportFragmentManager.beginTransaction().replace(R.id.change_view, GoodsFragment()).commit()
+                R.id.btn_profile -> supportFragmentManager.beginTransaction().replace(R.id.change_view, ProfileFragment()).commit()
+            }
+            true
         }
     }
 }
