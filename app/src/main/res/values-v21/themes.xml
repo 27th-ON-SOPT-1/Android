@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Theme.PiggyBankroid" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <!-- Primary brand color. -->
@@ -17,21 +18,20 @@
         <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <style name="StatusColor" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/black</item>
-        <item name="android:windowLightStatusBar">true</item>
+    <style name="Theme.PiggyBankroid" parent="Theme.MaterialComponents.Light.NoActionBar" tools:ignore="DuplicateDefinition">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/blue28</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
-
-    <style name="Widget.Design.BottomNavigationView." parent="Widget.Design.BottomNavigationView">
-        <item name="fontFamily">@font/noto_sans_semi_bold</item>
-     </style>
-
-    <style name="Theme.PiggyBankroid.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.PiggyBankroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.PiggyBankroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
