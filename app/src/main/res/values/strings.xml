@@ -11,4 +11,12 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Strings used for fragment_goods title-->
+    <string name="title_fragment_goods">솝트님을 위한\n추천 상품이에요</string>
+
+    <!--    Strings used for fragment_goods_contents-->
+    <string name="btn_fragment_goods_contents_confirm">확인하기</string>
+    <string name="tv_fragment_goods_contents_title">티끌모아 태산!</string>
+    <string name="tv_fragment_goods_contents_subTitle">잔돈, 이제 쓰지 말고 모아봐요</string>
 </resources>

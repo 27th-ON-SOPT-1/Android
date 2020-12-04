@@ -12,8 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <!-- Customize your theme here. -->
-        <item name="android:statusBarColor">@color/blue28</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="StatusColor" parent="Theme.MaterialComponents.Light.NoActionBar">

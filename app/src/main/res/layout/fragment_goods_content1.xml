@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GoodsContentFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        android:elevation="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_frag_goods1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/tv_fragment_goods_contents_title"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_frag_goods1_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/tv_fragment_goods_contents_subTitle"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_frag_goods1_title"
+                app:layout_constraintStart_toStartOf="@+id/tv_frag_goods1_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_frag_goods1_title" />
+
+            <ImageView
+                android:id="@+id/iv_frag_goods1_vector_pattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/vector_pattern"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_frag_goods1_piggy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="87dp"
+                android:src="@drawable/ic_piggy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_frag_goods1_subTitle" />
+
+            <Button
+                android:id="@+id/btn_frag_goods1_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/frame_15"
+                android:fontFamily="@font/font"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/btn_fragment_goods_contents_confirm"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="13sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
